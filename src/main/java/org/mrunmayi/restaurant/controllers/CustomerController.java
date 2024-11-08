@@ -22,9 +22,8 @@ public class CustomerController {
         return ResponseEntity.ok(customerService.createCustomer(request));
     }
 
-    @GetMapping
-    public ResponseEntity<List<CustomerResponse>> getAllCustomers() {
-        List<CustomerResponse> customers=  customerService.getAllCustomers();
-        return ResponseEntity.ok(customers);
+    @GetMapping("/{email}")
+    public ResponseEntity<CustomerResponse> getCustomersByEmail(@PathVariable("email") String email) {
+        return ResponseEntity.ok(customerService.getCustomerByEmail(email));
     }
 }

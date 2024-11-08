@@ -17,7 +17,7 @@ public class CustomerMapper {
                 .build();
     }
 
-    public CustomerResponse toDto(Customer customer) {
+    public CustomerResponse toCustomerResponse(Customer customer) {
         return new CustomerResponse(
                 customer.getFirstName(),
                 customer.getLastName(),
