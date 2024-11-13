@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Food Order</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+    color: #E74C3C;
+    font-weight: bold;
+    font-size: 50px;
+}
+.nav-item {
+    color: white;
+    font-weight:bold;
+    font-size:30px;
+}
+.nav-link{
+    color: white;
+    font-weight:bold;
+    font-size:20px;
+}
+.back{
+    background-image: url('images/background2.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.menu-section {
+    padding: 50px 20px;
+}
+.card img {
+    height: 150px;
+    object-fit: cover;
+}
+.product-card {
+    background: linear-gradient(to top right, #ffeb3b, #ff5722);
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product-card img {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.product-card .card-title {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.2em;
+}
+.product-card .card-text {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+.product-card .price {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+    margin: 10px 0;
+}
+.product-card .btn-add {
+    background-color: #e91e63;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.product-card .btn-add:hover {
+    background-color: #c2185b;
+}
+.product-card .rating {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+.menu-section h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="back">
+     <nav class="navbar navbar-expand-lg navbar-light"> 
+        
+        <div class="container">
+            <a class="navbar-brand"><strong>🍴 Yummy</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME   </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CART   </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PROFILE  </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+     </nav> 
+    
+
+    <!-- Header Section -->
+    <div class="header text-center">
+        <h1>It's not just food, it's an Experience!</h1>
+        <p>The best delicious food that meets your needs, order now</p>
+        <a href="#" class="btn btn-danger btn-lg">Order Now</a>
+    </div>
+</div>
+
+    <!-- Menu Section -->
+    <div class="container menu-section">
+        <h1 class="text-center mb-4">Order Fresh Food</h2>
+        <div class="row">
+            <!-- Masala Dosa -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/MasalaDosa.png" alt="Masala Dosa">
+                    <h5 class="card-title">Masala Dosa</h5>
+                    <p class="card-text">Crispy dosa and spiced potato, served with chutney</p>
+                    <div class="price">₹60</div>
+                    <button class="btn btn-add w-50">Add to Cart</button>
+                    <div class="rating">⭐ 4.5</div>
+                </div>
+            </div>
+            <!-- Manchurian -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/Manchurian.png" alt="Manchurian">
+                        <h5 class="card-title">Manchurian</h5>
+                        <p class="card-text">Delicious fusion of crispy veggies and bold, tangy sauce.</p>
+                        <p class="price">₹100</p>
+                        <button class="btn btn-danger w-50">Add to Cart</button>
+                        <div class="rating">⭐ 3.5</div>
+                </div>
+            </div>
+            <!-- Steamed Idli -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/SteamedIdli.png" alt="SteamedIdli">
+                        <h5 class="card-title">Steamed Idli</h5>
+                        <p class="card-text">Delicate, fluffy idlis served with tangy sambar and chutney.</p>
+                        <p class="price">₹40</p>
+                        <button class="btn btn-danger w-50">Add to Cart</button>
+                        <div class="rating">⭐ 4</div>
+                </div>
+            </div>
+            <!-- Bolognese -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/Bolognese.png" alt="Bolognese">
+                        <h5 class="card-title">Bolognese</h5>
+                        <p class="card-text">Flavorful meat sauce with garlic and herbs over spaghetti.</p>
+                        <p class="price">₹229</p>
+                        <button class="btn btn-danger w-50">Add to Cart</button>
+                        <div class="rating">⭐ 3.4</div>
+                </div>
+            </div>
+            <!-- Burger Combo -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/BurgerCombo.png" alt="BurgerCombo">
+                        <h5 class="card-title">Burger Combo</h5>
+                        <p class="card-text">Juicy burger with fries and a drink – the perfect combo!</p>
+                        <p class="price">₹180</p>
+                        <button class="btn btn-danger w-50">Add to Cart</button>
+                        <div class="rating">⭐ 4.1</div>
+                </div>
+            </div>
+            <!-- Veg Samosa -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/VegSamosa.png" alt="VegSamosa">
+                        <h5 class="card-title">Veg Samosa</h5>
+                        <p class="card-text">Golden samosas stuffed with savory potato filling.</p>
+                        <p class="price">₹60</p>
+                        <button class="btn btn-danger w-50">Add to Cart</button>
+                        <div class="rating">⭐ 3.2</div>
+                </div>
+            </div>
+            <!-- Hakka Noodles -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/HakkaNoodles.png" alt="HakkaNoodles">
+                        <h5 class="card-title">Hakka Noodles</h5>
+                        <p class="card-text">Deliciously spiced noodles with colorful, crisp veggies.</p>
+                        <p class="price">₹120</p>
+                        <button class="btn btn-danger w-50">Add to Cart</button>
+                        <div class="rating">⭐ 3.8</div>
+                </div>
+            </div>
+            <!-- Special Pizza -->
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="images/Pizza.png" alt="Pizza">
+                        <h5 class="card-title">Special Pizza</h5>
+                        <p class="card-text">Crispy crust topped with tomato sauce, melted cheese, and fresh toppings.</p>
+                        <p class="price">₹250</p>
+                        <button class="btn btn-danger w-50">Add to Cart</button>
+                        <div class="rating">⭐ 4.6</div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>Build by <strong>Sakina Baranwala</strong></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
